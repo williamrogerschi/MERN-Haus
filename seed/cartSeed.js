@@ -1,20 +1,22 @@
-const db = require('../db/index')
+const { Cart } = require('../models/Index.js');
 
-const { Cart, Cheese, Menu, Toppings, User, Order } = require('../models/Index.js')
+const cartSeed = async (orders) => {
+  try {
 
-// db.on('error', console.error.bind(console, `MongoDB connection error:`))
-
-module.exports = async function cartSeed() {
-    const orders = await Order.find()
-    let carts = []
-    for (let i = 0; i < orders.length; i++) {
-        carts.push({ current_order: orders[i]._id })
+    if (!Array.isArray(orders)) {
+      throw new Error('Orders is not an array');
     }
-    console.log(carts)
-    await Cart.insertMany(carts)
+    // Create carts with associated orders
+    const carts = orders.map(order => ({ current_order: order._id }));
 
-    // db.close()
-    console.log('Created Orders')
-}
+    const createdCarts = await Cart.create(carts);
 
-// main()
+    console.log('Carts seeded successfully');
+    return createdCarts;
+  } catch (error) {
+    console.error('Error seeding carts:', error);
+    throw error; // Propagate the error further
+  }
+};
+
+module.exports = cartSeed

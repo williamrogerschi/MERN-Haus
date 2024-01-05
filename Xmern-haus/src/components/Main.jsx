@@ -39,11 +39,6 @@ const Main = () => {
     useEffect(() => {
         const fetchUserData = async () => {
             try {
-            //   if (userData != null) {
-            //     console.log('refreshing user data')
-            //     const response = (await axios.get(`${BASE_URL}users/${userData._id}`)).data; 
-            //     setUserData(response);
-            //     console.log(response);
 
                 const updatedUserData = await fetchUpdatedUserData()
                 if (updatedUserData && updatedUserData.cart) {

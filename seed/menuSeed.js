@@ -41,7 +41,7 @@ const pizzaNames = [
     "https://cdn11.bigcommerce.com/s-vm6doh2w4n/images/stencil/original/products/8314/20588/brenbwklcajlem2t90lo__49662.1677143112.jpg?c=1",
     "https://santabarbarabaker.com/wp-content/uploads/2020/09/IMG_3995-1.jpg",
     "https://www.lowcarbmaven.com/wp-content/uploads/2018/02/BBQ-chicken-crust-pizza-3-500x500.jpg", // Actual URL for BBQ Chicken
-    "https://eathoneyspotpizza.com/wp-content/uploads/2023/04/Meat-Special-Pizza.png", // Actual URL for Meat Lover's
+    "https://zardyplants.com/wp-content/uploads/2022/01/Vegan-Meat-Lovers-Pizza-Big-Mountain-Foods-07-683x1024.jpg", // Actual URL for Meat Lover's
     "https://theyummybowl.com/wp-content/uploads/VEGETARIAN-PIZZA-GF-REC.jpg",
     "https://res.cloudinary.com/hksqkdlah/image/upload/SFS_Fennel_Cauliflower_Pizza_014_kjcbr0.jpg", // Actual URL for Pesto
     "https://images.squarespace-cdn.com/content/v1/64aed32c3fd84666887b8df1/1f643e47-24ff-45b3-9627-f8a6311b1c69/357370911_2237861156413686_7715237199015673461_n.jpg?format=2500w",

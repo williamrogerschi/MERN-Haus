@@ -1,35 +1,25 @@
-const db = require('../db/index')
+const { User } = require('../models/Index.js');
 
-const { User, Order, Cart } = require('../models/Index.js')
+const userSeed = async (carts) => {
+  try {
 
-// db.on('error', console.error.bind(console, `MongoDB connection error:`))
-
-const addUsers = async () => {
-
-    const users = [
-    ]
-    for (let i = 1; i <= 20; i++) {
-        users.push({ user_name: `User${i}` , points: 0})
+    if (!Array.isArray(carts)) {
+      throw new Error('Carts is not an array');
     }
-    // console.log(users)
-    await User.insertMany(users)    
-    console.log('Users created')
-}
+    // Create users with associated carts
+    const users = [];
+    const numberOfUsers = 10;
+    const availableCarts = carts.slice(0, numberOfUsers)
 
-
-module.exports = async function userSeed() {
-    await addUsers()
-    const carts = await Cart.find()
-    // let users = []
-    for (let i = 0; i < carts.length; i++) {
-        let user = await User.findOne().skip(i)
-        console.log(user)
-        await User.findByIdAndUpdate(user._id, {cart: carts[i]._id})
+    for (let i = 1; i <= availableCarts.length; i++) {
+      users.push({ user_name: `User${i}`, points: 0, cart: availableCarts[i - 1]._id });
     }
-    // await Cart.insertMany(carts)
+    await User.insertMany(users);
+    
+    console.log('Users seeded successfully');
+  } catch (error) {
+    console.error('Error seeding users:', error);
+  }
+};
 
-    // db.close()
-    console.log('Created Users')
-}
-
-// main()
+module.exports  = userSeed
