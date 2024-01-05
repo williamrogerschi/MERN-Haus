@@ -3,10 +3,9 @@ button.btn-grey {
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: row;
-    width: 300px;
+
+    max-width: 300px;
 }
-
-
 
 .button {
     display: flex;
@@ -23,8 +22,8 @@ button.pizza-btn {
     color: black;
     background-color: white;
     max-width: 300px;
-    margin-top: 20px;
-}
+    margin-top: 10px;
+
 
 button.pizza-btn:hover {
     display: flex;
@@ -34,7 +33,6 @@ button.pizza-btn:hover {
     background-color: black;
     max-width: 300px;
 }
-
 
 .card-body {
     max-width: 300px;

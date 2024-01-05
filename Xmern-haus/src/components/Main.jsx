@@ -19,6 +19,7 @@ const Main = () => {
 
 
 
+
     const fetchUpdatedUserData = async () => {
         try {
           if (userData !== null) {
@@ -33,6 +34,7 @@ const Main = () => {
           throw error
         }
       }
+
 
     useEffect(() => {
         const fetchUserData = async () => {
