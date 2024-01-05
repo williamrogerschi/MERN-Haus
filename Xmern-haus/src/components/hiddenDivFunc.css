@@ -23,7 +23,7 @@ button.pizza-btn {
     background-color: white;
     max-width: 300px;
     margin-top: 10px;
-
+}
 
 button.pizza-btn:hover {
     display: flex;
