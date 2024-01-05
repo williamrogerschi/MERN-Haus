@@ -1,5 +1,5 @@
 const express = require('express')
-const db = require('./db')
+const connectDB = require('./db')
 const logger = require('morgan')
 const bodyParser = require('body-parser')
 const cors = require('cors')
@@ -21,6 +21,14 @@ const app = express();
 app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(cors())
+
+
+connectDB()
+    .then((db) => {
+        app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
+    })
+    .catch((error) => console.error(error))
+
 
 // order of seeds - topping, cheeses, menu, order, cart, user
 //show routes
@@ -72,10 +80,6 @@ app.get('/users/:id', userController.getOneUser)
 app.post('/users/', userController.createNewUser)
 app.put('/users/:id', userController.updateUser)
 app.delete('/users/:id', userController.deleteUser)
-// app.delete('/users/:userId/clearCart', (req, res) => {
-//     req.cart = { current_order: [] }
-//     return res.status(200).json({ message: 'Cart items cleared' })
-//   })
 
 
-app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
+// app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))

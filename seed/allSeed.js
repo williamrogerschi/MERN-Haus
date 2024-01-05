@@ -1,4 +1,5 @@
-const db = require('../db/index')
+// const db = require('../db/index')
+const connectDB = require('../db/index.js')
 
 const cheeseSeed = require('./cheeseSeed')
 const toppingsSeed = require('./toppingsSeed')
@@ -6,9 +7,13 @@ const menuSeed = require('./menuSeed')
 const orderSeed = require('./orderSeed')
 const cartSeed = require('./cartSeed')
 const userSeed = require('./userSeed')
+const connectDB = require('../db/index')
 
 async function deleteCollections() {
     try {
+
+      const db = await connectDB()
+
       const collections = Object.keys(db.collections);
   
       for (const collectionName of collections) {
