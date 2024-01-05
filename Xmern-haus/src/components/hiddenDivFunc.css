@@ -3,9 +3,9 @@ button.btn-grey {
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: row;
+
     max-width: 300px;
 }
-
 
 .button {
     display: flex;
@@ -23,7 +23,7 @@ button.pizza-btn {
     background-color: white;
     max-width: 300px;
     margin-top: 10px;
-}
+
 
 button.pizza-btn:hover {
     display: flex;

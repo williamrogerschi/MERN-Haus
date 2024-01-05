@@ -5,8 +5,6 @@ import { useState, useEffect } from 'react'
 import Description from './hiddenDivFunc'
 
 const Pizza = (props) => {
-    
-
         const [pizza, setPizza] = useState([])
 
         useEffect(() => {
@@ -32,8 +30,10 @@ const Pizza = (props) => {
                             <h4>{pizzaItem.name} ${pizzaItem.base_price}</h4>
                             <Description description = {pizzaItem.description}
                                          itemId = {pizzaItem._id}
+                                         price = {pizzaItem.base_price}
                                          userData={props.userData} 
-                                         setUserData={props.setUserData}/> 
+                                         setUserData={props.setUserData}
+                                         setUpdateUser={props.setUpdateUser}/> 
                         </div>
                         </div>
                 ))}
