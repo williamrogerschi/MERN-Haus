@@ -2,7 +2,7 @@ const db = require('../db/index')
 
 const { Cart, Cheese, Menu, Toppings, User} = require('../models/Index.js')
 
-db.on('error', console.error.bind(console, `MongoDB connection error:`))
+// db.on('error', console.error.bind(console, `MongoDB connection error:`))
 
 const pizzaNames = [
     "Cheese", "Pepperoni", "Vegetarian", "Hawaiian", "Supreme", "Mushroom", "BBQ Chicken",
@@ -10,16 +10,6 @@ const pizzaNames = [
     "BBQ Bacon", "Four Cheese", "Margarita", "Bacon Ranch", "Pineapple", "Meatball"
   ]
   
-//   const toppingsList = [
-//     'Canadian Bacon', 'Prosciutto', 'Italian Sausage', 'Bacon', 'Ham', 'Mushrooms', 'Green Peppers',
-//     'Onions', 'Black Olives', 'Green Olives', 'Tomatoes', 'Spinach', 'Broccoli', 'Artichoke Hearts',
-//     'Red Peppers', 'Pepperoni'
-//   ]
-  
-//   const cheesesList = [
-//     'Asiago', 'Mozzarella', 'Parmesan', 'Cheddar', 'Provolone', 'Gouda', 'Fontina', 'Ricotta',
-//     'Blue Cheese', 'Gorgonzola'
-//   ]
 
   const pizzaDescriptions = [
     "Simple and delicious with tomato sauce and mozzarella cheese.",

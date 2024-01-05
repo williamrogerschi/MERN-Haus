@@ -2,7 +2,7 @@ const db = require('../db/index')
 
 const { Cart, Cheese, Menu, Toppings, User, Order } = require('../models/Index.js')
 
-db.on('error', console.error.bind(console, `MongoDB connection error:`))
+// db.on('error', console.error.bind(console, `MongoDB connection error:`))
 
 module.exports = async function cartSeed() {
     const orders = await Order.find()

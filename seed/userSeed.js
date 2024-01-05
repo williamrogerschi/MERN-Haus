@@ -2,7 +2,7 @@ const db = require('../db/index')
 
 const { User, Order, Cart } = require('../models/Index.js')
 
-db.on('error', console.error.bind(console, `MongoDB connection error:`))
+// db.on('error', console.error.bind(console, `MongoDB connection error:`))
 
 const addUsers = async () => {
 

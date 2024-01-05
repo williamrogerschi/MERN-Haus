@@ -2,12 +2,7 @@ const db = require('../db/index')
 
 const { Menu, Toppings, Cheese, Order } = require('../models/Index')
 
-db.on('error', console.error.bind(console, `MongoDB connection error:`))
-
-// const menu_info = Menu.find() 
-// const toppings_info = Topping.find()
-// const cheese_info = Cheese.find()
-// const order_info = Order.find()
+// db.on('error', console.error.bind(console, `MongoDB connection error:`))
 
 const findMenuItemByName = async (pizzaName) => {
     return (await Menu.findOne({name:pizzaName}))._id

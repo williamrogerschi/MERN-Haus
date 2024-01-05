@@ -1,6 +1,3 @@
-// const db = require('../db/index')
-const connectDB = require('../db/index.js')
-
 const cheeseSeed = require('./cheeseSeed')
 const toppingsSeed = require('./toppingsSeed')
 const menuSeed = require('./menuSeed')
