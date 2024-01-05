@@ -5,44 +5,44 @@ const orderSeed = async () => {
     // Create some orders
     const orders = await Order.create([
       {
-        menu_item: [], // Your menu item details
-        custom_pizza: [], // Your custom pizza details
-        total_price: "0" // Total price details
+        menu_item: [],
+        custom_pizza: [],
+        total_price: "0"
       },
       {
-        menu_item: [], // Your menu item details for Order 2
-        custom_pizza: [], // Your custom pizza details for Order 2
-        total_price: "0" // Total price details for Order 2
+        menu_item: [],
+        custom_pizza: [],
+        total_price: "0"
       },
       {
-        menu_item: [], // Your menu item details for Order 2
-        custom_pizza: [], // Your custom pizza details for Order 2
-        total_price: "0" // Total price details for Order 2
+        menu_item: [],
+        custom_pizza: [],
+        total_price: "0"
       },
       {
-        menu_item: [], // Your menu item details for Order 2
-        custom_pizza: [], // Your custom pizza details for Order 2
-        total_price: "0" // Total price details for Order 2
+        menu_item: [],
+        custom_pizza: [],
+        total_price: "0"
       },
       {
-        menu_item: [], // Your menu item details for Order 2
-        custom_pizza: [], // Your custom pizza details for Order 2
-        total_price: "0" // Total price details for Order 2
+        menu_item: [],
+        custom_pizza: [],
+        total_price: "0"
       },
       {
-        menu_item: [], // Your menu item details for Order 2
-        custom_pizza: [], // Your custom pizza details for Order 2
-        total_price: "0" // Total price details for Order 2
+        menu_item: [],
+        custom_pizza: [],
+        total_price: "0"
       },
       {
-        menu_item: [], // Your menu item details for Order 2
-        custom_pizza: [], // Your custom pizza details for Order 2
-        total_price: "0" // Total price details for Order 2
+        menu_item: [],
+        custom_pizza: [],
+        total_price: "0"
       },
       {
-        menu_item: [], // Your menu item details for Order 2
-        custom_pizza: [], // Your custom pizza details for Order 2
-        total_price: "0" // Total price details for Order 2
+        menu_item: [],
+        custom_pizza: [],
+        total_price: "0"
       },
     ]);
     
