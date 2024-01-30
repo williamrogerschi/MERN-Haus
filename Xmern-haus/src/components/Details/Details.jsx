@@ -75,17 +75,16 @@ function Description(props) {
 
   return (
     <React.StrictMode>
-      <Button className='see-btn' color="grey" onClick={toggle} style={{ marginBottom: '1rem' }}>
-        See Pizza
-        <img src='https://www.wisedecor.com/wp-content/uploads/2017/12/Arrow-Thirteen-Pointing-up-Lettering-Art-17-o-600x560.jpg' className='button'/>
-      </Button>
+      <button className='see-btn' onClick={toggle}>
+        Details
+      </button>
       <Collapse isOpen={isOpen}> 
         <Card>
           <CardBody>
             <div className='item-description'>{props.description}</div>
-            <Button className='pizza-btn' block onClick={() => addToCart()}>
+            <button className='details-btn' onClick={() => addToCart()}>
               Add to Cart
-            </Button>
+            </button>
           </CardBody>
         </Card>
       </Collapse>

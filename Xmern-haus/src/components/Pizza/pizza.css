@@ -1,10 +1,14 @@
+.pizza-container {
+    font-family: 'Neue Regrade Semibold', sans-serif;
+}
+
+
 .pizza-header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 80px 0 40px 0;
     flex-direction: row;
-    font-family: 'Roboto Mono', monospace;
   }
   
   .pizza-map {
@@ -18,7 +22,7 @@
   .pizza-card {
     border: 2px solid black;
     border-radius: 12px;
-
+    background-color: rgb(233,229,221);
   }
 
   .pizza-card:hover {
@@ -55,7 +59,25 @@
     color: black;
   }
 
-  .see-btn.btn.btn-grey {
+  .see-btn{
+    font-family: 'Neutral Face', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     margin-left: 1rem;
-    padding: 0rem 0.5rem;
+    min-height: 0rem;
+    border: 2px solid black;
+    border-radius: 32px;
+    margin-bottom: 1rem;
+    padding:  0 1rem;
+    background-color: #AA2D2F;
+    color: rgb(233,229,221);
   }
+
+  .see-btn:hover{
+    color: black;
+    transition: box-shadow 300ms ease 0s, transform 300ms ease 0s;
+    box-shadow: 3px 3px 1px 0px;
+  }
+

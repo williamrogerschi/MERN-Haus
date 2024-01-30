@@ -139,6 +139,8 @@ h5 {
   margin: 1rem 1rem;
   border-bottom: 2px solid;
   width: fit-content;
+  font-family: 'Neue Regrade Semibold', sans-serif;
+  font-size: 3vh;
 }
 
 .leftside, .rightside {

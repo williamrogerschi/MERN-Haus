@@ -20,7 +20,7 @@ const Pizza = (props) => {
         return (
         <div className="pizza-container">
             <div className='pizza-header'>
-                <h1> P  I  Z  Z  A  S </h1>
+                <h1> Signature Pizzas</h1>
             </div>
             <div className='pizza-map'>
                 {pizza.map((pizzaItem, key) => (
