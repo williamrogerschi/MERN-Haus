@@ -1,9 +1,56 @@
-/* font-family: 'Encode Sans Condensed', sans-serif;
-font-family: 'Gruppo', sans-serif;
-font-family: 'Manrope', sans-serif;
+/* font-family: 'Manrope', sans-serif;
 font-family: 'Poppins', sans-serif;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Source Code Pro', monospace; */
+ */
+
+ @font-face {
+  font-family: 'Neue Regrade Bold Italic';
+  src: url('/fonts/Neue Regrade Bold Italic.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Neue Regrade Bold';
+  src: url('/fonts/Neue Regrade Bold.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Neue Regrade ExtraBold Italic';
+  src: url('/fonts/Neue Regrade ExtraBold Italic.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Neue Regrade ExtraBold';
+  src: url('/fonts/Neue Regrade ExtraBold.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Neue Regrade Light Italic';
+  src: url('/fonts/Neue Regrade Light Italic.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Neue Regrade Light';
+  src: url('/fonts/Neue Regrade Light.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Neue Regrade Medium Italic';
+  src: url('/fonts/Neue Regrade Medium Italic.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Neue Regrade Medium';
+  src: url('/fonts/Neue Regrade Medium.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Neue Regrade Regular Italic';
+  src: url('/fonts/Neue Regrade Regular Italic.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Neue Regrade Regular';
+  src: url('/fonts/Neue Regrade Regular.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Neue Regrade SemiBold Italic';
+  src: url('/fonts/Neue Regrade SemiBold Italic.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Neue Regrade SemiBold';
+  src: url('/fonts/Neue Regrade Semibold.otf') format('opentype');
+ }
+
 
 body {
   padding: 0;
@@ -12,13 +59,14 @@ body {
 
 .main {
 position: relative;
-font-family: 'Poppins', sans-serif;
+font-family: 'Neue Regrade Medium', sans-serif;
 }
 
 /* HOME CSS */
 .header-container {
   display: flex;
-  flex-direction: column-reverse;}
+  flex-direction: column-reverse;
+}
 
 .navbar {
   display: flex;
@@ -26,7 +74,7 @@ font-family: 'Poppins', sans-serif;
   flex-direction: row;
   background-color: rgb(233,229,221);
   border-bottom: 1px solid black;
-  padding: 0px 20px 0 20px;
+  padding: 0 20px 0 20px;
 }
 
 .header img {
@@ -35,18 +83,19 @@ font-family: 'Poppins', sans-serif;
 }
 
 .nav-a {
-  text-decoration: none;
-  color: rgb(10, 10, 10);
+  font-family: 'Neue Regrade SemiBold Italic', sans-serif;
+  border: 2px solid black;
+  border-radius: 2rem;
+  background-color: #AA2D2F;
+  color: rgb(233,229,221);
   font-size: 18px;
-  padding: 0px 40px 0 40px;
+  padding: 2px 30px 0px 30px;
+  margin: 0 1.5rem;
 }
 
 .nav-a:hover {
-  text-decoration: none;
-  /* color: rgb(171,44,45); */
-  color: black;
   font-size: 18px;
-  text-shadow: 1px 1px 2px grey;
+  box-shadow: 3px 3px 1px 0px;
 }
 
 a {

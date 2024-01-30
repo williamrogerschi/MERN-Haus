@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import './Container.css';
-import { BASE_URL } from '../global'
+import './container.css';
+import { BASE_URL } from '../../global'
 
 
 const Login = (props) => {
@@ -68,10 +68,7 @@ const Login = (props) => {
       props.setUserData(response.data.user)
       props.onClose()
       return response.data
-  }
-
-  
-    
+  } 
   }
   const createUser =  async () => {
     console.log('Create Started..')

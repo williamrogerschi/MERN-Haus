@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { BASE_URL } from '../global'
+import { BASE_URL } from '../../global'
 import axios from 'axios'
-import './Cart.css'
+import './cart.css'
 
 const Cart = (props) => {
   
