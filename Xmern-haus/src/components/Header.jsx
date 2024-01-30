@@ -10,33 +10,33 @@ const Header = () => {
     let headerImageStyle = {}
 
     if( location.pathname === '/') {
-        headerImage = 'pizzaheader.jpg'
+        headerImage = 'multiplepizza.jpg'
         headerImageStyle = {
             height: '40vh',
             width: '100%',
             backgroundImage: `url(${headerImage})`,
             backgroundSize: 'cover',
-            backgroundPosition: '50% 70%',
+            backgroundPosition: '50% 60%',
             borderBottom: '1px solid black'
         }
-    } else if (location.pathname === '/CYOP') {
-        headerImage = 'CYOP.jpg'
-        headerImageStyle = {
-            height: '40vh',
-            width: '100%',
-            backgroundImage: `url(${headerImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            borderBottom: '1px solid black'
-        }
+    // } else if (location.pathname === '/CYOP') {
+    //     headerImage = 'multiplepizza.jpg'
+    //     headerImageStyle = {
+    //         height: '40vh',
+    //         width: '100%',
+    //         backgroundImage: `url(${headerImage})`,
+    //         backgroundSize: 'cover',
+    //         backgroundPosition: 'center',
+    //         borderBottom: '1px solid black'
+    //     }
     } else if(location.pathname === '/Pizza') {
-        headerImage = 'pizzas.webp'
+        headerImage = '2x.jpg'
         headerImageStyle = {
             height: '40vh',
             width: '100%',
             backgroundImage: `url(${headerImage})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: '50% 80%',
             borderBottom: '1px solid black'
         }
     } else {

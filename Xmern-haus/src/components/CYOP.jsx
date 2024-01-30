@@ -90,20 +90,6 @@ export default function CYOP(props) {
 
       console.log(props.userData)
       
-      //calculate total price
-      // const order = props.userData.cart.current_order
-      // let menu_item_cost = 0
-      // for (let i = 0; i < order.menu_item.length; i++) {
-      //   menu_item_cost += order.menu_item[i].base_price
-      // }
-      // console.log('menu_item_cost', menu_item_cost)
-      // let custom_item_cost = 0
-      // for (let i = 0; i < order.custom_pizza.length; i++) {
-      //   custom_item_cost += 10 + order.custom_pizza[i].toppings.length + order.custom_pizza[i].cheeses.length
-      // }
-      // console.log('custom_item_cost', custom_item_cost)
-      
-      // let total = props.userData.cart.current_order._id
 
       const custom_pizza = [...current_custom_pizzas, new_custom_pizza]
       console.log(custom_pizza)
@@ -163,14 +149,11 @@ const calculatePrice = () => {
     
   },[sizeSelected, toppingsSelected, cheeseSelected])
 
-//   useEffect(() => {
-
-//   },[price])
 
   return cheeses && toppings ? (
     <div className="CYOP-page">
                 <div className='pizza-header'>
-                <h1> C Y O P </h1>
+                <h1> Create Your Own Pizza</h1>
             </div>
             <div className="CYOP">
       <div className="leftside">
@@ -178,7 +161,7 @@ const calculatePrice = () => {
           className="custompizza"
           src='./PizzaPartyIdeas6.jpg'
         />
-        <h5>Total Price: ${price}</h5>
+        <h5 className="h5-price">Total Price: $ {price}</h5>
       </div>
       <div className="rightside">
         <h5>Sizes</h5>
@@ -200,9 +183,6 @@ const calculatePrice = () => {
           Large
         </Button>
 
-        {/* <p>Selected: {rSelected}</p> */}
-
-        {/* //cheeses */}
         <h5>Cheeses</h5>
 
         {cheeses ? (
