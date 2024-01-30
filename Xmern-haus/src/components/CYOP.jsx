@@ -151,6 +151,7 @@ const calculatePrice = () => {
 
 
   return cheeses && toppings ? (
+    
     <div className="CYOP-page">
                 <div className='pizza-header'>
                 <h1> Create Your Own Pizza</h1>
