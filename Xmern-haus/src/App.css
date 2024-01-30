@@ -204,6 +204,9 @@ button.CYOP-btn {
   background-color: rgb(233,229,221);
   max-width: 50%;
   margin: 20px auto;
+  font-family: 'Neutral Face', sans-serif;
+  letter-spacing: 1px;
+  font-size: 2vh;
 }
 
 
