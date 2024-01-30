@@ -132,7 +132,6 @@ h1 {
   border: 2px solid black;
   border-radius: 32px;
   padding: 0.5rem 1rem;
-  /* box-shadow: 4px 4px 1px 0px; */
   background-color: rgb(233,229,221);
 }
 
@@ -189,6 +188,7 @@ button.btn:hover {
   border: 2px solid black;
   color: black;
   background-color: rgb(233,229,221);
+  transition: box-shadow 300ms ease 0s, transform 300ms ease 0s;
   box-shadow: 3px 3px 1px 0px black;
 }
 
@@ -219,58 +219,6 @@ button.CYOP-btn {
   letter-spacing: 1px;
   box-shadow: 4px 4px 1px 0px;
   background-color: rgb(233,229,221);
-}
-
-/* pizza page */
-.pizza-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 0 40px 0;
-  flex-direction: row;
-  font-family: 'Roboto Mono', monospace;
-}
-
-.pizza-map {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 60px;
-  justify-items: center;
-  padding: 30px 30px 30px 30px;
-}
-
-.pizza-card-image {
-  min-width: 300px;
-  min-height: 300px;
-  max-width: 300px;
-  max-height: 300px;
-  box-shadow: 1px 1px 4px grey;
-  /* , 6px 6px 4px grey; */
-  border-radius: 12px;
-}
-
-.pizza-card-image:hover {
-  min-width: 300px;
-  min-height: 300px;
-  max-width: 300px;
-  max-height: 300px;
-  box-shadow: 1px 1px 4px grey, 3px 3px 4px darkslategrey;
-  border-radius: 12px;
-}
-
-h4 {
-  font-size: 20px;
-  padding: 12px 0 0 0;
-  text-decoration: none;
-}
-
-h1 {
-  font-weight: 600;
-}
-
-.pizza-link {
-  text-decoration: none;
-  color: black;
 }
 
 /* FOOTER CSS */

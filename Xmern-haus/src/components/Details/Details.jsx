@@ -80,17 +80,12 @@ function Description(props) {
         <img src='https://www.wisedecor.com/wp-content/uploads/2017/12/Arrow-Thirteen-Pointing-up-Lettering-Art-17-o-600x560.jpg' className='button'/>
       </Button>
       <Collapse isOpen={isOpen}> 
-      {/* {...props} */}
         <Card>
           <CardBody>
-            {/* {menu.map((des, index) => (
-                <div className='item-description'>{des.description}</div>
-            ))} */}
             <div className='item-description'>{props.description}</div>
             <Button className='pizza-btn' block onClick={() => addToCart()}>
               Add to Cart
             </Button>
-            {/* <AddToCart itemId = {props.itemId} /> */}
           </CardBody>
         </Card>
       </Collapse>

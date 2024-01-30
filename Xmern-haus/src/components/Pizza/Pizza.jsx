@@ -1,7 +1,8 @@
-import { BASE_URL } from '../global'
+import { BASE_URL } from '../../global'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import Description from './Details/Details'
+import Description from '../Details/Details'
+import './pizza.css'
 
 const Pizza = (props) => {
         const [pizza, setPizza] = useState([])
