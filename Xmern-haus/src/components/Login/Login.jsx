@@ -85,16 +85,20 @@ const Login = (props) => {
   return (
     <div className="centered-container">
       <div className="content">
-        <h2 className="login-header">Login</h2>
-        {}
+        <div className="login-header">
+          <h2 className="login-h2">Login</h2>
+          <div className="x-wrapper">
+            <button className="x-btn" onClick={props.onClose}>
+              x
+            </button>
+            </div>
+        </div>
+        
+        
         {userData && (
-          <div>
-            <div>
+          <div className="login-username">
               Username {userData.username}
             </div>
-       
-            {}
-          </div>
         )}
         <div className="input-container">
           <input 
@@ -102,17 +106,16 @@ const Login = (props) => {
             id="username" 
             onChange={handleUsernameChange} 
             value={username} 
-            placeholder="Enter your username" />
+            placeholder="Your Username" />
         </div>
         <div className="input-container">
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" placeholder="Enter your password" />
+          <label className='login-password' htmlFor="password">Password</label>
+          <input type="password" id="password" placeholder="Your Password" />
         </div>
-
-        <button className="cart-btn" onClick={props.onClose}>Close</button>
-        <button className="cart-btn" onClick={() => loginUser()}>Login</button>
-        <button className="cart-btn" onClick={() => createUser()}>Create User</button>
-
+        <div className="login-btn-container">
+          <button className="login-btn" onClick={() => loginUser()}>Login</button>
+          <button className="login-btn" onClick={() => createUser()}>Create User</button>
+        </div>
       </div>
     </div>
   );
