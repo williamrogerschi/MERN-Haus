@@ -13,19 +13,19 @@
 
 
 .item-description {
-    font-family: 'Neue Regrade Regular', sans-serif;
+  font-family: 'Mori-ExtraLightItalic', sans-serif;
     padding-bottom: 1rem;
 }
 
 .details-btn {
     border: 2px solid black;
-    font-family: 'Neutral Face', sans-serif;
-    padding: 0rem 1 rem;
+    font-family: 'Mori-SemiBold', sans-serif;
     border-radius: 32px;
     background-color: #AA2D2F;
     color: rgb(233,229,221);
     margin-right: 1rem;
     margin-bottom: 1rem;
+    padding: 0 0.8rem;
   }
 
   .details-btn:hover {
@@ -37,7 +37,7 @@
 
   
   .see-btn{
-    font-family: 'Neutral Face', sans-serif;
+    font-family: 'Mori-SemiBold', sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;

@@ -58,6 +58,31 @@ font-family: 'Poppins', sans-serif;
   font-family: 'Neutral Face Bold';
   src: url('/fonts/NeutralFace-Bold.otf') format('opentype');
  }
+ @font-face {
+  font-family: 'Mori-Regular';
+  src: url('/fonts/PPMori-Regular.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Mori-RegularItalic';
+  src: url('/fonts/PPMori-RegularItalic.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Mori-SemiBold';
+  src: url('/fonts/PPMori-SemiBold.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Mori-SemiBoldItalic';
+  src: url('/fonts/PPMori-SemiBoldItalic.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Mori-ExtraLight';
+  src: url('/fonts/PPMori-Extralight.otf') format('opentype');
+ }
+ @font-face {
+  font-family: 'Mori-ExtraLightItalic';
+  src: url('/fonts/PPMori-ExtralightItalic.otf') format('opentype');
+ }
+
 
 
 body {
@@ -80,8 +105,7 @@ position: relative;
   justify-content: flex-start;
   flex-direction: row;
   background-color: rgb(233,229,221);
-  /* background-image: url('/fonts/wb.png'); */
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   padding: 0 20px 0 20px;
 }
 
@@ -91,7 +115,7 @@ position: relative;
 }
 
 .nav-a {
-  font-family: 'Neue Regrade SemiBold Italic', sans-serif;
+  font-family: 'Mori-SemiBoldItalic', sans-serif;
   border: 2px solid black;
   border-radius: 2rem;
   background-color: #AA2D2F;
@@ -140,13 +164,13 @@ h5 {
   margin: 1rem 1rem;
   border-bottom: 2px solid;
   width: fit-content;
-  font-family: 'Neue Regrade Semibold', sans-serif;
+  font-family: 'Mori-SemiBoldItalic', sans-serif;
   font-size: 3vh;
 }
 
 .leftside, .rightside {
   width: 50%;
-  font-family: 'Neutral Face', sans-serif;
+  font-family: 'Mori-Regular', sans-serif;
 }
 
 .leftside {
@@ -207,9 +231,9 @@ button.CYOP-btn {
   background-color: rgb(233,229,221);
   max-width: 50%;
   margin: 20px auto;
-  font-family: 'Neutral Face', sans-serif;
+  font-family: 'Mori-SemiBoldItalic', sans-serif;
   letter-spacing: 1px;
-  font-size: 2vh;
+  font-size: 3vh;
 }
 
 
@@ -217,10 +241,10 @@ button.CYOP-btn {
   border: 2px solid black;
   border-radius: 32px;
   padding: 0.5rem 1rem;
-  font-family: 'Neutral Face', sans-serif;
-  font-size: 3vh;
+  font-family: 'Mori-SemiBoldItalic', sans-serif;
+  font-size: 3.5vh;
   letter-spacing: 1px;
-  box-shadow: 4px 4px 1px 0px;
+  box-shadow: 3px 3px 1px 0px;
   background-color: rgb(233,229,221);
 }
 
