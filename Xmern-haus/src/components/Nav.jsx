@@ -132,11 +132,13 @@ const Nav = (props) => {
           </div>
         </div>
         {showContainer && (
+          <div className="login-container">
           <Login
             onClose={closeContainer}
             userData={props.userData}
             setUserData={props.setUserData}
           />
+        </div>
         )}
       </div>
     </div>

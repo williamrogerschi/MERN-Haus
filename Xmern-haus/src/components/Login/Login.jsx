@@ -85,12 +85,12 @@ const Login = (props) => {
   return (
     <div className="centered-container">
       <div className="content">
-        <h2>Login</h2>
+        <h2 className="login-header">Login</h2>
         {}
         {userData && (
           <div>
             <div>
-              Username: {userData.username}
+              Username {userData.username}
             </div>
        
             {}
