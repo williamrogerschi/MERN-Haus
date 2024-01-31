@@ -84,7 +84,6 @@ font-family: 'Poppins', sans-serif;
  }
 
 
-
 body {
   padding: 0;
   margin: 0;
@@ -98,6 +97,26 @@ position: relative;
 .header-container {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.nav-header {
+  position: relative;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
 }
 
 .navbar {
@@ -138,6 +157,14 @@ a {
 }
 
 /* CYOP CSS */
+.pizza-header-cyop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12rem;
+  flex-direction: row;
+}
+
 .custompizza {
   border: 2px solid black;
   border-radius: 12px;

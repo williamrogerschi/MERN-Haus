@@ -37,6 +37,8 @@ const Main = () => {
 
 
     useEffect(() => {
+
+      
         const fetchUserData = async () => {
             try {
 
@@ -82,7 +84,6 @@ const Main = () => {
         <Routes>
             <Route path='/' element={<Home userData={userData} setUserData={setUserData}/>}/>
             <Route path='/Pizza' element={<Pizza userData={userData} setUserData={setUserData} setUpdateUser={setUpdateUser}/>}/>
-            {/* <Route path='/Drinks/:id' element={<DrinkDetails/>}/> */}
             <Route path='/CYOP' element={<CYOP 
                                             userData={userData} 
                                             setUserData={setUserData}

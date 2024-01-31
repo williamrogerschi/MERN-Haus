@@ -1,5 +1,5 @@
 .pizza-container {
-    font-family: 'Mori-SemiBold', sans-serif
+    font-family: 'Mori-SemiBold', sans-serif;
 }
 
 
@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 0 40px 0;
+    padding: 4rem 0px;
     flex-direction: row;
   }
   
