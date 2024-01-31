@@ -227,12 +227,12 @@ button.btn {
   font-size: 1.5vh;
 }
 
-button.btn-outline-primary.active {
+button.btn-outline-transparent.active {
   width:140px;
   margin: 1px;
   color: black;
   border: 2px solid black;
-  background-color: rgb(233,229,221);;
+  background-color: #AA2D2F;
   box-shadow: 3px 3px 1px 0px black;
   margin: 0.5rem;
 }

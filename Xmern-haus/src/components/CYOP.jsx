@@ -168,7 +168,7 @@ const calculatePrice = () => {
         <h5>Sizes</h5>
 
         <Button
-          color="primary"
+          color="transparent"
           outline
           onClick={() => setSize(1)}
           active={sizeSelected === 1}
@@ -176,7 +176,7 @@ const calculatePrice = () => {
           Small
         </Button>
         <Button
-          color="primary"
+          color="transparent"
           outline
           onClick={() => setSize(2)}
           active={sizeSelected === 2}
@@ -192,7 +192,7 @@ const calculatePrice = () => {
               <Button
                 className="buttonList"
                 key={cheese._id}
-                color="primary"
+                color="transparent"
                 outline
                 onClick={() => onCheckboxBtnClick(cheese._id, "cheese")}
                 active={cheeseSelected.includes(cheese._id)}
@@ -215,7 +215,7 @@ const calculatePrice = () => {
               <Button
                 className="buttonList"
                 key={topping._id}
-                color="primary"
+                color="transparent"
                 outline
                 onClick={() => onCheckboxBtnClick(topping._id, "topping")}
                 active={toppingsSelected.includes(topping._id)}
@@ -230,7 +230,7 @@ const calculatePrice = () => {
           </Spinner>
         )}
         <h5></h5>
-        <Button className="CYOP-btn" block onClick={() => addToCart()}>
+        <Button className="CYOP-btn" color='transparent' block onClick={() => addToCart()}>
           Add to Cart
         </Button>
       </div>
