@@ -22,7 +22,7 @@
   .pizza-card {
     border: 2px solid black;
     border-radius: 12px;
-    background-color: rgb(233,229,221);
+    background-color: white;
     background-image: url('/fonts/wb.png');
   }
 
