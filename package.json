@@ -23,6 +23,6 @@
     "reactstrap": "^9.2.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.3"
   }
 }
