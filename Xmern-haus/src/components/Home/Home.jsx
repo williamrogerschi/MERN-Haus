@@ -50,7 +50,7 @@ Grazie mille for choosing us!</p>
             />
           </div>
           <div className="menu-text">
-            <h2>Create Your Own Pizza - CYOP</h2>
+            <h2>Create Your Own Pizza</h2>
             <p>Unleash your creativity at Mern Pizza Haus with our Create Your Own option! Start with fresh dough, choose premium sauces, and customize with favorite toppings. Whether you crave classic or adventurous, thin or thick crust, the power to create your unique masterpiece is in your hands.</p>
           </div>
         </Link>

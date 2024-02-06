@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 6rem;
   }
 
   .menu-link-container {
@@ -48,7 +49,6 @@
     border: 2px solid black;
     border-radius: 12px;
     background-color: #e9e5dd;
-    /* margin: 1rem 1rem; */
     padding: 2px;
     cursor: pointer;
     color: black;
@@ -85,7 +85,7 @@
   }
   
   .circular-image {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 6px;
     width: 100%;
     height: 100%;
@@ -125,7 +125,7 @@
   }
   
   .about-us-image img {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 6px;
     max-width: 100%;
     height: 280px;
