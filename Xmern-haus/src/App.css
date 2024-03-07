@@ -1,7 +1,3 @@
-/* font-family: 'Manrope', sans-serif;
-font-family: 'Poppins', sans-serif;
- */
-
  @font-face {
   font-family: 'Neue Regrade Bold Italic';
   src: url('/fonts/Neue Regrade Bold Italic.otf') format('opentype');
@@ -86,6 +82,8 @@ font-family: 'Poppins', sans-serif;
  body, html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mori-Regular', sans-serif;
 }
 
 .main {
@@ -111,6 +109,11 @@ position: relative;
   top: 0;
   left: 0;
   right: 0;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0;
+
+  }
 }
 
 .navbar-links {
@@ -142,11 +145,23 @@ position: relative;
   padding: 2px 30px 0px 30px;
   cursor: pointer;
   margin: 0 1.5rem;
+
+  @media screen and (max-width: 600px) {
+    margin: 0.5rem;
+    font-size: 1.5vh;
+    padding: 1px 12px;
+  }
 }
 
 .nav-a:hover {
   font-size: 18px;
   box-shadow: 3px 3px 1px 0px;
+
+  @media screen and (max-width: 600px) {
+    margin: 0.5rem;
+    font-size: 1.5vh;
+    padding: 1px 12px;
+  }
 }
 
 a {
@@ -236,7 +251,6 @@ button.btn-outline-transparent.active {
   box-shadow: 3px 3px 1px 0px black;
   margin: 0.5rem;
 }
-
 button.btn:hover {
   border: 2px solid black;
   color: black;
@@ -244,14 +258,11 @@ button.btn:hover {
   transition: box-shadow 300ms ease 0s, transform 300ms ease 0s;
   box-shadow: 3px 3px 1px 0px black;
 }
-
-
 button.buttonList {
   width: 140px;
   color: black;
   border: 2px solid black;
 }
-
 button.CYOP-btn {
   color: black;
   background-color: rgb(233,229,221);
@@ -261,8 +272,6 @@ button.CYOP-btn {
   letter-spacing: 1px;
   font-size: 3vh;
 }
-
-
 .h5-price {
   border: 2px solid black;
   border-radius: 32px;
@@ -283,10 +292,8 @@ li {
   flex-direction: column;
   width: 100%;
   justify-content: space-around;
-  background-image: url(./brick.jpg);
+  background-image: url(/brick.jpg);
   background-size: cover;
-  /* position: absolute;
-  bottom: 0; */
   border-top: 2px solid black;
   margin-top: 20px;
 }
@@ -310,16 +317,43 @@ li {
   justify-content: space-around;
   padding-top: 10px;
 }
-.inner-footer2{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
+.adham {
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
+.billy {
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.jaim {
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.josh {
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 .footer-ul {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  padding: 0;
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
 }
 .footer-section {
   padding-top: 20px;
@@ -335,11 +369,17 @@ a:hover {
 
 li {
   padding: 10px 50px 0 50px;
+  @media screen and (max-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .footer-list {
   color: rgb(233,229,221);
   text-decoration: none;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: #AA2D2F;
 }
 
 .footer-list:hover{

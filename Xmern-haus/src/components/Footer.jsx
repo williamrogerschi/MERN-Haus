@@ -13,6 +13,7 @@ export default function Footer() {
         <div className="inner-footer">
         <div className="adham">
           Adham
+          <div className="footer-a-container">
           <a href="https://www.linkedin.com/in/adham-morsy/" target="_blank"className="linkedin-link">
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -27,9 +28,11 @@ export default function Footer() {
               style={{ color: "white" }}
             />
           </a>
+          </div>
         </div>
         <div className="billy">
             Billy
+            <div className="footer-a-container">
           <a href="https://www.linkedin.com/in/billy-rogers-chi/" target="_blank"className="linkedin-link">
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -44,9 +47,11 @@ export default function Footer() {
               style={{ color: "white" }}
             />
           </a>
+          </div>
         </div>
         <div className="jaim">
           Jaim
+          <div className="footer-a-container">
           <a href="https://www.linkedin.com/in/jaimtoledo10" target="_blank" className="linkedin-link">
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -61,9 +66,11 @@ export default function Footer() {
               style={{ color: "white" }}
             />
          </a>
+         </div>
         </div>
         <div className="josh">
           Josh
+          <div className="footer-a-container">
           <a href="https://www.linkedin.com/in/josh-g-hutchison/" target="_blank" className="linkedin-link">
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -78,6 +85,7 @@ export default function Footer() {
               style={{ color: "white" }}
             />
           </a>
+          </div>
         </div>
         </div>
         <div className="inner-footer2">
