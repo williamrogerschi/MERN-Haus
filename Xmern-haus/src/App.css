@@ -319,6 +319,9 @@ li {
   padding-top: 10px;
 }
 .adham {
+  display: flex;
+  flex-direction: row;
+
   @media screen and (max-width: 1200px) {
     display: flex;
     justify-content: center;
@@ -326,6 +329,9 @@ li {
   }
 }
 .billy {
+  display: flex;
+  flex-direction: row;
+
   @media screen and (max-width: 1200px) {
     display: flex;
     justify-content: center;
@@ -333,6 +339,9 @@ li {
   }
 }
 .jaim {
+  display: flex;
+  flex-direction: row;
+
   @media screen and (max-width: 1200px) {
     display: flex;
     justify-content: center;
@@ -340,6 +349,9 @@ li {
   }
 }
 .josh {
+  display: flex;
+  flex-direction: row;
+  
   @media screen and (max-width: 1200px) {
     display: flex;
     justify-content: center;
@@ -371,7 +383,7 @@ a:hover {
 li {
   padding: 10px 50px 0 50px;
   @media screen and (max-width: 1200px) {
-    padding: 0;
+    padding: 2px;
   }
 }
 
@@ -379,13 +391,21 @@ li {
   color: rgb(233,229,221);
   text-decoration: none;
   border: 2px solid black;
-  border-radius: 12px;
+  border-radius: 24px;
   background-color: #AA2D2F;
+  font-family: 'Mori-RegularItalic', sans-serif;
+  font-size: 18px;
+  padding: 6px 15px;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.8vh;
+    padding: 2.5px 8px;
+  }
 }
 
 .footer-list:hover{
-  text-decoration-line: overline;
   color: white;
+  box-shadow: 3px 3px 1px 0px black;
 }
 .add-to-cart {
   border: solid red;
