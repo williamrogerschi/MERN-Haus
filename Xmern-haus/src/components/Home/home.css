@@ -29,34 +29,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 6rem;
   }
 
   .menu-link-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 75%;
+    width: 100%;
+    gap: 1rem;
   }
   
   .menu-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    flex-wrap: wrap;
+    min-height: 24vh;
+    min-width: 49%;
     border: 2px solid black;
     border-radius: 12px;
     background-color: #e9e5dd;
-    margin-top: 20px;
-    padding: 10px;
+    padding: 2px;
     cursor: pointer;
-    text-decoration: none;
     color: black;
-
+    background-image: url('/fonts/wb.png');
   }
 
   .menu-item:hover {
     transition: box-shadow 300ms ease 0s, transform 300ms ease 0s;
-    box-shadow: 4px 4px 1px 0px;
+    box-shadow: 6px 6px 1px 0px;
     transform: translate(-4px, -4px);
   }
   
@@ -84,7 +85,7 @@
   }
   
   .circular-image {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 6px;
     width: 100%;
     height: 100%;
@@ -97,18 +98,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 75%;
+      width: 100%;
       border: 2px solid black;
       border-radius: 12px;
       background-color: #e9e5dd;
       margin-top: 6rem;
       margin-bottom: 4rem;
-  }
-
-  .about-us-container:hover {
-    transition: box-shadow 300ms ease 0s, transform 300ms ease 0s;
-    box-shadow: 4px 4px 1px 0px;
-    transform: translate(-4px, -4px);
+      box-shadow: 6px 6px 1px 0px;
+      background-image: url('/fonts/wb.png');
   }
   
   .about-us-text {
@@ -128,7 +125,7 @@
   }
   
   .about-us-image img {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 6px;
     max-width: 100%;
     height: 280px;

@@ -95,7 +95,7 @@ const Cart = (props) => {
     {props.userData && (
     <div className={`cart-overlay-container ${menuOpen ? 'open' : ''}`}>
       <div className="cart-wrapper">
-        <div className="arrow" onClick={toggleCart}>
+        <div className="cart-header" onClick={toggleCart}>
           Cart
         </div>
         {menuOpen && (
@@ -107,7 +107,7 @@ const Cart = (props) => {
                     {cartItems.cart.current_order.custom_pizza && cartItems.cart.current_order.custom_pizza.length > 0 && (
                       cartItems.cart.current_order.custom_pizza.map((customPizza, index) => (
                         <div className='cyop-cart' key={index}>
-                          <h4>Custom Pizza</h4>
+                          <h4 className='cart-h4'>Custom Pizza</h4>
                           <li>Base Pizza: {customPizza.base_pizza.name}</li>
                           <li>Toppings: {customPizza.toppings.map((topping) => topping.name).join(', ')}</li>
                           <li>Cheeses: {customPizza.cheeses.map((cheese) => cheese.name).join(', ')}</li>
@@ -118,7 +118,7 @@ const Cart = (props) => {
                     {cartItems.cart.current_order.menu_item && cartItems.cart.current_order.menu_item.length > 0 && (
                       cartItems.cart.current_order.menu_item.map((sigPizza, index) => (
                         <div className='sig-cart' key={index}>
-                          <h4>Signature Pizza</h4>
+                          <h4 className='cart-h4'>Signature Pizza</h4>
                           <li>Menu Item: {sigPizza.name}</li>
                           <li>Toppings: {sigPizza.toppings.map((topping) => topping.name).join(', ')}</li>
                           <button className='cart-btn' onClick={() => removeItem(sigPizza._id, 'menu item')}>Remove</button>
@@ -127,10 +127,10 @@ const Cart = (props) => {
                     )}
 
                   <div className='cart-btn-container'>
-                    <button className='cart-btn' onClick= {deleteOrder}>Clear Order</button>
+                    <button className='clear-cart-btn' onClick= {deleteOrder}>Clear Order</button>
                   </div>
                   <div className='order-cart'>
-                    <li><strong>Total Price:</strong> {cartItems.cart.current_order.total_price}</li>
+                    <li className='cart-price'><strong>Total Price:</strong> {cartItems.cart.current_order.total_price}</li>
                   </div>
                 </div>
               )}
