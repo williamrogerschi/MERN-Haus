@@ -79,7 +79,7 @@
   src: url('/fonts/PPMori-ExtralightItalic.otf') format('opentype');
  }
 
- body, html {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -190,6 +190,12 @@ a {
   display:flex;
   flex-direction: row;
   padding: 30px;
+
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
 }
 
 h1 {
@@ -202,17 +208,29 @@ h1 {
   background-image: url('/fonts/wb.png');
 }
 
-h5 {
+.cyop-h5 {
   margin: 1rem 1rem;
-  border-bottom: 2px solid;
+  border-bottom:2px solid #AA2D2F;
   width: fit-content;
   font-family: 'Mori-SemiBoldItalic', sans-serif;
   font-size: 3vh;
 }
 
+.h5-container {
+  
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .leftside, .rightside {
   width: 50%;
   font-family: 'Mori-Regular', sans-serif;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .leftside {
@@ -225,11 +243,21 @@ h5 {
 .rightside {
   padding-top: 1rem;
   padding-left: 2.4rem;
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 1rem;
+    padding-left: 0;
+  }
 }
 
 .buttonGroup {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+    gap: 6px;
+  }
 }
 
 button.btn {
