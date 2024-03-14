@@ -12,7 +12,10 @@
   padding: 20px;
   text-align: center;
   max-width: 20%;
-  /* color: rgb(233,229,221); */
+
+  @media screen and (max-width: 1200px) {
+    max-width: 50%;
+  }
 }
   
   .content {
@@ -73,7 +76,7 @@
   #username::placeholder {
     font-family: 'Mori-ExtraLightItalic', sans-serif;
     color: black;
-    font-size: 3vh;
+    font-size: 2vh;
     padding: 1rem;
   }
 
@@ -91,7 +94,7 @@
   #password::placeholder {
     font-family: 'Mori-ExtraLightItalic', sans-serif;
     color: black;
-    font-size: 3vh;
+    font-size: 2vh;
     padding: 1rem;
   }
 
@@ -112,7 +115,7 @@
   .login-btn {
     border: 2px solid black;
     font-family: 'Mori-SemiBold', sans-serif;
-    font-size: 1vw;
+    font-size: 1vh;
     border-radius: 32px;
     background-color: rgb(233,229,221);
     color: black;
