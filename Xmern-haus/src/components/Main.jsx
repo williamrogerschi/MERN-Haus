@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom'
-import Header from './Header'
 import Nav from './Nav'
 import Home from './Home/Home'
 import Pizza from './Pizza/Pizza'
@@ -78,7 +77,6 @@ const Main = () => {
      <>
     <div className="main">
         <div className='header-container'>
-            <Header/>
             <Nav userData={userData} setUserData={setUserData}/>
         </div>
         <Routes>

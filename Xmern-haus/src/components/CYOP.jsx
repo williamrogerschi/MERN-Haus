@@ -154,7 +154,7 @@ const calculatePrice = () => {
     
     <div className="CYOP-page">
                 <div className='pizza-header-cyop'>
-                <h1> Create Your Own Pizza</h1>
+                <h1 className="cyop-h1"> Create Your Own Pizza</h1>
             </div>
             <div className="CYOP">
       <div className="leftside">

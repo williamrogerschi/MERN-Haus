@@ -25,6 +25,13 @@
     }
   }
 
+  .cyop-h1 {
+    font-family: 'Neue Regrade Bold', sans-serif;
+    @media screen and (max-width: 1200px) {
+      font-size: 3vh;
+    }
+  }
+
   h2 {
     font-family: 'Neue Regrade Semibold', sans-serif;
   }

@@ -1,0 +1,17 @@
+.headerImage {
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    border-bottom: 2px solid black;
+    position: relative;
+    @media screen and (max-width: 1200px) {
+        height: 20vh;
+    }
+}
+
+.headerImageHome {
+    background-position: 50% 60%;
+}
+.headerImagePizza {
+    background-position: 50% 80%;
+}
