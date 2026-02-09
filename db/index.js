@@ -16,8 +16,9 @@ const mongoose = require('mongoose')
 const connectDB = async () => {
   try {
     const dbName = 'mernHausDatabase'
-    const uri = `mongodb+srv://williamrogerschi:Jukath00n1990!@pizzahaus.uynbwsf.mongodb.net/${dbName}?retryWrites=true&w=majority`
-
+    // const uri = `mongodb+srv://williamrogerschi:Jukath00n1990!@pizzahaus.uynbwsf.mongodb.net/${dbName}?retryWrites=true&w=majority`
+    const uri = "mongodb+srv://williamrogerschi:Jukath00n1990!@pizzahaus.uynbwsf.mongodb.net/?appName=PizzaHaus"
+    
     await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
